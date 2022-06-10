@@ -39,12 +39,12 @@ a {
     border-radius: 10px 30px;
     padding: 4px; 
     background:
-        linear-gradient(25deg, rgba(255,255,255,0.7), rgba(255,255,255,0.7)) padding-box,
-        linear-gradient(45deg,darkblue,rgb(255, 115, 0)) border-box; 
+        linear-gradient(45deg, rgba(255,255,255,0.6), rgba(255,255,255,0.6)) padding-box,
+        linear-gradient(20deg,darkblue,rgb(255, 115, 0)) border-box; 
     border: 5px solid transparent;
-    border-radius: 10px 20px;
+    border-radius: 10px 30px;
 }
 
-#mainpage {
-    align-items: left;
+.mainpage {
+    color: rgb(39, 47, 66);
 }

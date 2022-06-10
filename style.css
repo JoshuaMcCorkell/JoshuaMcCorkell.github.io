@@ -4,12 +4,18 @@ body {
     background-size: cover;
     color: black;
     padding-right: 70px;
+    text-align: center;
 }
 /* Photo by Jr Korpa on Unsplash https://unsplash.com/collections/ldGx8lAcEUg/textures */
 
 h1 {
     font-size: 280%;
     padding-left: 70px;
+    padding-bottom: 30px;
+    padding-top: 20px;
+    margin: auto;
+    text-align: center;
+    width: 550px;
 }
 
 ul {
@@ -21,28 +27,46 @@ a {
     color: black;
 }
 
+img {
+    padding: 4px; 
+    background:
+        linear-gradient(45deg, rgba(255,255,255,0.6), rgba(255,255,255,0.6)) padding-box,
+        linear-gradient(20deg,darkblue,rgb(255, 115, 0)) border-box; 
+    border: 5px solid transparent;
+    border-radius: 30px 10px;
+}
+
 .pagelink {
     font-size: larger;
 }
 
 .center {
-    margin: auto;
     text-align: center;
-    width: 550px;
+    margin: auto;
+    width: 600px;
 }
 
 .box {
-    padding: 10px;
     width: 600px;
-    margin: auto;
     font-weight: bold;
-    border-radius: 10px 30px;
     padding: 4px; 
     background:
         linear-gradient(45deg, rgba(255,255,255,0.6), rgba(255,255,255,0.6)) padding-box,
         linear-gradient(20deg,darkblue,rgb(255, 115, 0)) border-box; 
     border: 5px solid transparent;
     border-radius: 10px 30px;
+}
+
+.leftbox {
+    display: inline-block;
+    text-align: center;
+    padding-right: 480px;
+}
+
+.rightbox {
+    display: inline-box;
+    padding-left: 500px;
+    text-align: center;
 }
 
 .mainpage {

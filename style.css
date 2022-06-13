@@ -65,6 +65,12 @@ img {
     border-radius: 10px 30px;
 }
 
+.nav {
+    width: 600px;
+    display: table;
+    text-align: left;
+}
+
 .leftbox, .rightbox {
     float: left;
     text-align: center;
@@ -106,7 +112,7 @@ img {
     text-align: left;
 }
 
-.left {
+p.left, .left > p, .left > ul {
     font-weight: 1;
 }
 

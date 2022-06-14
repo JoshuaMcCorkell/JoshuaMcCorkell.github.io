@@ -87,7 +87,7 @@ img {
     }
 }
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1140px) {
     #profile > .leftbox, #profile > .rightbox {
         width: 100%;
     }

@@ -123,3 +123,7 @@ p.left, .left > p, .left > ul {
 #avatarimg {
     width: 300px;
 }
+
+.joblink {
+    font-weight: bold;
+}

@@ -130,3 +130,10 @@ img {
     font-weight: bold;
 }
 
+h4 {
+    text-decoration: underline;
+}
+
+#description {
+    font-size: 180%;
+}

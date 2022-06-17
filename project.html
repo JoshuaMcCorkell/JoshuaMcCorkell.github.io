@@ -3,25 +3,85 @@
     <head>
         <link rel="stylesheet" type="text/css" href="style.css" />
         <title>Project - Joshua McCorkell</title>
+        <script>
+            function second() {
+                document.getElementById("lint").src = "resources/codepy.png";
+            }
+            function first() {
+                document.getElementById("lint").src = "resources/CodeCoachLint.jpg";
+            }
+        </script>
     </head>
-    <body id="itproject">
+    <body">
         <h1>IT Project</h1>
-        <div class="columns" id="itproj">
+        <div class="center">
+            <div class="box">
+                <a href="index.html" class="pagelink">Back to Main Page</a>
+                <h3>Overview</h3>
+                <p class="left">
+                    My IT project idea is for a program that actively coaches and educates you when you are coding. It will integrate with popular code editors like VS Code. While you are writing code, it will watch what you are writing, 
+                    and quickly alert you to the presence of bugs, stylistic mistakes, syntax errors, and any other kinds of problems that it can find. This program will tell you exactly where the mistake is, why it is a problem, and how to fix it, 
+                    in addition to doing all the other jobs of a standard code linter or static code analyser. Additionally, it will also include tutorials to help you start off quickly with a programming language. 
+                    Ideally, this program will also include the ability to ask questions about how to do certain things (for example), a bit like a google search for ‘how do I do xyz in abc language’. The name of the of the project is CodeCoach.
+                </p>
+                <h3>Motivation</h3>
+                <p class="left">
+                    The motivation for this project is to create a useful tool to help people learn programming easily, and to improve and expand their programming skills quickly and effectively. Programming is quickly becoming a very important skill, 
+                    and many people don’t have any knowledge of it. In addition, many consider it to be ‘too hard’. This program is designed to make it easier to start programming, and easier to keep writing quality code. 
+                    Programs like linters and static code analysers are very helpful for experienced programmers, but for beginners they can be confusing and unhelpful, especially if they lack good explanations. The idea of this project is to do the job of these programs and more. 
+                    It will have tutorials, how-to pages and tools, and it will do all of this in a more helpful, supportive, fun, and educative way. Ideally it will also have different levels and toggles so that you can learn things at your own pace.
+                </p>
+            </div>
+            <br>
+            <div class="box">
+                <h3 id="description">Description</h3>
+                <p class="left">
+                    CodeCoach is a program that coaches and teaches people when they code. It will integrate into code editors like VS Code as an extension. It will have 4 main functionalities: 
+                    <strong>Linting, Tutorials, How-to,</strong> and <strong>Debugging</strong>. It will also have a <strong>Glossary</strong> for programming terms and jargon. In the examples, words in blue would be in the glossary.
+                </p>
+            </div>
+        </div>
+        <br>
+        <div class="columns" id="itproject">
             <div class="leftbox">
                 <div class="box">
-                    <a href="index.html" class="pagelink">Back to Main Page</a>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio facilis id nam similique autem vitae, quibusdam temporibus veritatis tenetur non, repellat, possimus veniam sint assumenda harum libero eligendi ipsam dolorem.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam beatae, fugit placeat earum ullam natus veniam quae voluptatem eligendi at necessitatibus accusantium totam repudiandae amet nam quaerat sit quam ab!
-                        Repellat aut numquam sit ratione voluptatem assumenda iste error adipisci nemo voluptate sequi tempore magni neque sunt at pariatur hic quam non nulla dolor dolores, excepturi, incidunt soluta cupiditate. Cum?</p>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste similique ratione consequatur minima est. Beatae culpa sequi deleniti hic explicabo tempore id amet at voluptatem, debitis, mollitia, modi omnis nulla?
-                        Odit rem explicabo assumenda dolorem beatae culpa, adipisci architecto unde quo fugiat ipsum, ullam repudiandae. Quam corporis perspiciatis excepturi maxime voluptas. Fugiat magnam voluptas neque? Harum quam placeat nemo asperiores?
-                        Eius reprehenderit animi, natus ullam, odit vel omnis incidunt ut, obcaecati quasi similique illo dolore soluta sint libero unde eaque. Consequatur ea dicta incidunt nesciunt in est quae vitae sint.
-                        Voluptatem aspernatur dolore, tempore minima facilis optio in placeat incidunt eum nesciunt quis dolor sequi tenetur saepe similique nam repudiandae! Culpa voluptatibus ipsa harum dicta rem! Voluptatibus nemo fugiat omnis.</p>
+                    <h4>Linting</h4>
+                    <p class="left">
+                        The CodeCoach Linting functionality will include all the things that normal linting and code analysis tools include: identifying possible bugs and mistakes, pointing out stylistic mistakes/improvements, 
+                        and alerting the programmer to different code smells that may have overlooked. In addition, CodeCoach will have information readily available about these problems, and show the user why these things are a problem, 
+                        and how to fix them, all in an easy-to-understand, beginner friendly way. It will also have different levels and settings available. For example, the user could set certain types of bugs to high importance, 
+                        so that CodeCoach will have a popup-box when they occur (See example: hover for before and after), or they could set it to low importance (just an underline maybe) or even off if they don’t want to be bothered with that type of problem. 
+                    </p>
+                    <br>
+                    <h4>Tutorials</h4>
+                    <p class="left">
+                        CodeCoach will have numerous tutorials available to help people learn programming languages and programming concepts. These will be especially useful for people wanting to use a certain language for the first time (See example).
+                        It can step them through the process of setting up their first program, the syntax of the language, and how to use common code constructs in that language. There could also be tutorials about common programming ideas, 
+                        such as how to connect to a database, how to read data from files on your computer, how to connect to internet APIs, etc.
+                    </p>
+                    <br><br>
                 </div>
             </div>
             <div class="rightbox" id="projectimg">
-                <img src="resources/CodeCoachLint.jpg" alt="A mockup example of the linting/code analysis feature of CodeCoach.">
+                <img onmouseover="first()" onmouseout="second()" src="resources/codepy.png" alt="A mockup example of the linting/code analysis feature of CodeCoach." id="lint">
                 <img src="resources/CodeCoachTutorial.jpg" alt="A mockup example of the tutorial feature of CodeCoach.">
+            </div>
+        </div>
+        <br>
+        <div class="center">
+            <div class="box">                  
+                <h4>How-To</h4>
+                <p class="left">
+                    The how-to feature of CodeCoach is very similar to the tutorials feature, but contains more numerous, shorter instructional articles/tutorials that the user can search for. Things like ‘How to check if string can be interpreted as float in python’, 
+                    ‘How to clone a struct in Rust’, and ‘How to add a border to a container in CSS’. This feature could be very useful for all types of programmers, and potentially save large amounts of time that they would have used searching through Google 
+                    and Stack Overflow for the answer. CodeCoach would also have the ability to show and use the official documentation of the language, which would be a very convenient thing to have in your code editor.
+                </p>
+                <h4>Debugging</h4>
+                <p class="left">
+                    The debug feature of CodeCoach would run at the same time as normal debug features in languages (such as breakpoints and possibly code step-through). This is one part of the project I am a little unsure about, but ideally it would be able to make 
+                    suggestions to you based on certain inputs from the user and knowledge about the program and purpose, all integrated with the other features such as the glossary, linter, and how-to. For example, if at a certain breakpoint a variable was set to 5, 
+                    but you told the program it was supposed to be set to 2, it could try to work out where it was being set incorrectly / where the logic error is.
+                </p>
             </div>
         </div>
     </body>
